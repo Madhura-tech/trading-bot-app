@@ -1,0 +1,21 @@
+2026-07-06 14:46:13 | WARNING  | cli | Input validation failed: Invalid symbol 'BTC@USDT'. Must be alphanumeric, e.g. BTCUSDT.
+2026-07-06 14:47:00 | WARNING  | cli | Input validation failed: Quantity must be greater than zero, got -5.
+2026-07-06 14:47:23 | WARNING  | cli | Input validation failed: Invalid side 'HOLD'. Must be one of: SELL, BUY.
+2026-07-06 14:47:56 | INFO     | orders | Placing MARKET BUY order | symbol=BTCUSDT qty=0.001
+2026-07-06 14:47:56 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1783329476228}
+2026-07-06 14:47:57 | DEBUG    | client | Response 401 | body: {"code":-2014,"msg":"API-key format invalid."}
+2026-07-06 14:47:57 | ERROR    | client | API error — code: -2014, msg: API-key format invalid.
+2026-07-06 14:47:57 | ERROR    | orders | MARKET order failed | Binance API error -2014: API-key format invalid.
+2026-07-06 15:20:18 | INFO     | orders | Placing MARKET BUY order | symbol=BTCUSDT qty=0.001
+2026-07-06 15:20:18 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1783331418872}
+2026-07-06 15:20:19 | DEBUG    | client | Response 401 | body: {"code":-2014,"msg":"API-key format invalid."}
+2026-07-06 15:20:19 | ERROR    | client | API error — code: -2014, msg: API-key format invalid.
+2026-07-06 15:20:19 | ERROR    | orders | MARKET order failed | Binance API error -2014: API-key format invalid.
+2026-07-06 15:25:39 | INFO     | orders | Placing MARKET BUY order | symbol=BTCUSDT qty=0.001
+2026-07-06 15:25:39 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1783331739190}
+2026-07-06 15:25:40 | DEBUG    | client | Response 200 | body: {"orderId":19539917093,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Kr6MNRBStWRzZTY0yxgeTg","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1783331741466}
+2026-07-06 15:25:40 | INFO     | orders | MARKET order placed | orderId=19539917093 status=NEW executedQty=0.0000
+2026-07-06 15:32:04 | INFO     | orders | Placing LIMIT BUY order | symbol=BTCUSDT qty=0.001 price=60000 tif=GTC
+2026-07-06 15:32:04 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '60000', 'timeInForce': 'GTC', 'timestamp': 1783332124418}
+2026-07-06 15:32:05 | DEBUG    | client | Response 200 | body: {"orderId":19540977523,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"2OYuNtmg6Ts021edqHgudy","price":"60000.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1783332126170}
+2026-07-06 15:32:05 | INFO     | orders | LIMIT order placed | orderId=19540977523 status=NEW
